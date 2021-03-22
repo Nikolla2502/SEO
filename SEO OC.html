@@ -47,14 +47,12 @@
             <li><strong><a href="#cache_navigateur">2.3 - Paramétrez le cache navigateur -</a></strong></li>
             <li><strong><a href="#cdn">2.4 - Appuyez-vous sur un Content Delivery Network -</a></strong></li>
             <li><strong><a href="#optimiser_cms">2.5- Accélérez un site créé avec un CMS -</a></strong></li>
-            <li><strong><a href="#audit_site">3.3 -  -</a></strong></li>
-            <li><strong><a href="#optimisation_contenu">3.4 -  -</a></strong></li>
-            <li><strong><a href="#machine_contenu">3.5 -  -</a></strong></li>
-            <li><strong><a href="#optimisation_contenu">3.6 -  -</a></strong></li>
-            <li><strong><a href="#autorite_site">4.1 -  -</a></strong></li>
-            <li><strong><a href="#partenariat">4.2 -  -</a></strong></li>
-            <li><strong><a href="#backlinks">4.3 -  -</a></strong></li>
-            <li><strong><a href="#KPIs_Google_Analytics">4.4 -  -</a></strong></li>
+            <li><strong><a href="#google_javascript">3.1 - Découvrez comment Google interprète le JavaScript -</a></strong></li>
+            <li><strong><a href="#client-side_vs_server-side rendering">3.2 - Décidez entre client-side et server-side rendering -</a></strong></li>
+            <li><strong><a href="#test_rendering">3.3 - Testez votre rendering -</a></strong></li>
+            <li><strong><a href="#architecture_technique">4.1 - Mettez en place la bonne architecture technique -</a></strong></li>
+            <li><strong><a href="#contenu_langue">4.2 - Créez du contenu pour chaque langue -</a></strong></li>
+            <li><strong><a href="#exercice">Exercice -  Entraînez-vous en allégeant une page web et en paramétrant le cache navigateur -</a></strong></li>
         </ul>
       </div>
     </div>
@@ -79,11 +77,9 @@
                 <li>
                     <div class="ressources">Indiquer à Google la position de votre business sur la carte:</div>
                     <a href="https://www.google.com/intl/fr_fr/business/" target="_blank"><strong>- Google My Business -</strong></a><br>
-                    
-                </li><br>
+                </li>
                 <li>
                     <a href="https://support.google.com/analytics/answer/1008080?hl=fr" target="_blank"><strong>- Google Tag Manager -</strong></a><br>
-                    
                 </li><br>
                 <li>
                     <div class="ressources"><u>Avoir des informations très précises sur ce que vos visiteurs recherchent sur Google pour vous trouver:</u></div>
@@ -143,11 +139,17 @@
                     
                 </li><br>
                 <li>
+                    <u><a href="#optimisation_mobile" class="ressources">Test d’optimisation mobile:</a></u><br>
+                    <a href="https://search.google.com/test/mobile-friendly" target="_blank">Test d’optimisation mobile Google</a>
+
+                </li><br>
+                <li>
                     <u><a href="#compression_image" class="ressources">Compressez vos images:</a></u><br>
                     <a href="https://imageoptim.com/fr" target="_blank">ImageOptim</a><br>
                     Pour les utilisateurs de Mac, <a href="https://imageoptim.com/fr" target="_blank">ImageOptim</a> optimise les paramètres de compression, supprime les métadonnées indésirables et les profils de couleurs inutiles.<br>
                     <a href="https://pnggauntlet.com/" target="_blank">PNGgauntlet</a><br>
-                    <a href="https://compressor.io/" target="_blank">https://compressor.io/</a>
+                    <a href="https://compressor.io/" target="_blank">https://compressor.io/</a><br>
+                    <a href="https://www.onlineconverter.com/bmp-to-webp" target="_blank">Conversion en ligne : BMP to Webp</a>
                 </li><br>
                 <li>
                     <u><a href="#minifier_ressources" class="ressources">Minifiez et compressez vos ressources:</a></u><br>
@@ -159,25 +161,67 @@
                     <u><a href="#cache_navigateur" class="ressources">Cache navigateur:</a></u><br>
                     <a href="https://www.nginx.com/" target="_blank">nginx</a> :installer un cache au niveau de votre serveur<br>
                     <a href="https://varnish-cache.org/" target="_blank">varnish</a> :installer un cache au niveau de votre serveur<br>
-                    <a href="https://www.giftofspeed.com/cache-checker/" target="_blank">cache checker</a><br>
-                    
-                </li>
+                    <a href="https://www.giftofspeed.com/cache-checker/" target="_blank">cache checker</a> : Verifier le bon parametrage du cache<br>
+                    <a href="http://www.htaccesscheck.com/" target="_blank">http://www.htaccesscheck.com/</a> :Verifier la validité du fichier .htaccess
+                </li><br>
+                <li>
+                    <u><a href="#pre-rendering" class="ressources">Solutions de pre-rendering:</a></u><br>
+                    <a href="https://prerender.io/" target="_blank">Prerender.io</a><br>
+                    <a href="https://docs.prerender.io/article/9-google-support" target="_blank">Doc Google Prerender</a><br>
+                    <a href="https://github.com/chrisvfritz/prerender-spa-plugin" target="_blank">Prerender spa plugin</a><br>
+                    <a href="https://github.com/stereobooster/react-snap" target="_blank">React-snap</a>
+                </li><br>
+                <li>
+                    <div class="ressources"><a href="#outils_test_accessibilite">Outils de test d'accessibilté:</a></div>
+                    <li>
+                      - Chrome avec les extensions suivantes :
+                      <ul>
+                          <a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh" target="_blank">Wave Evaluation Tool</a> : vérificateur d'accessibilité automatisé<br>
+                          <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd/related" target="_blank">aXe</a> : vérificateur d'accessibilité automatisé<br>
+                          <a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi/related" target="_blank">HeadingsMap</a> permet de voir rapidement la structure des rubriques de la page.
+                    </ul></li>
+                    <li>
+                      <a href="https://www.tpgi.com/color-contrast-checker/" target="_blank">- TPG Colour Contrast Analyser</a> pour tester le contraste.<br>
+                      <a href="https://www.nvaccess.org/" target="_blank">- Lecteur d'écran NVDA</a> (utilisateurs de PC uniquement).
+                    </li>
+                  </li><br>
+                  <li><div class="ressources"><a href="#controle_balisage">Controle du balisage :</a></div>
+                    <a href="https://validator.w3.org/nu/" target="_blank">Nu HTML Checker</a> : Controle du balisage
+                  </li><br>
+                  <li><div class="ressources"><a href="#controle_balisage">Analyse des règles WCAG :</a></div>
+                    <a href="https://www.tpgi.com/wcag-2-0-parsing-error-bookmarklet/" target="_blank">Analyse des règles WCAG</a> :Bookmarklet d'analyse exclusive des règles WCAG (en anglais)
+                  </li><br>
     
             </ul>
           </div>
         <div class="sommaire">
-          <h2>- Lexique -</h2>
-          <ul class="list_sommaire">  
-              <li><strong>- SEO:</strong>Search Engine Optimization</li>
+            <ul class="list_sommaire"><h2>- WordPress -</h2>
+                <li><strong>- CMS:</strong> Content Management System</li>
+                <li>
+                    <u><a href="#images_wordpress" class="ressources">Plugins pour optimiser les images sur Wordpress ::</a></u><br>
+                    <a href="https://resmush.it/" target="_blank">reSmush.it</a><br>
+                    <a href="https://ewww.io/" target="_blank">EWWW Image Optimizer</a><br>
+                    <a href="https://shortpixel.com/" target="_blank">ShortPixel Image Optimizer</a>
+                </li><br> 
+                <li>
+                    <u><a href="#cache_wordpress" class="ressources">Plugins de cache pour Wordpress ::</a></u><br>
+                    <a href="https://fr.wordpress.org/plugins/wp-super-cache/" target="_blank">WP Super Cache</a> : Modèle freemium avec support payant ;<br>
+                    <a href="https://fr.wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a> : Modèle freemium avec support payant<br>
+                    <a href="https://wp-rocket.me/fr/" target="_blank">WP-Rocket</a> : Plugin payant de très bonne qualité.
+                </li><br> 
+
+            </ul>
+          
+          <ul class="list_sommaire"><h2>- Lexique Ressource Articles-</h2>  
               <li><strong><a href="#kpi">- KPI (Key Perfommance Indicators) :</a></strong>indicateurs-clés de performance,<br>
                 ils servent à mesurer la performance de vos efforts SEO.</li>
-              <li><strong>CMS:</strong> Content Management System</li>
-              <li><strong><a href="#"></a></strong></li>
-              <li><strong><a href="#"></a></strong></li>
-              <li><strong><a href="#"></a></strong></li>
-              <li><strong><a href="#"></a></strong></li>
-              <li><strong><a href="#"></a></strong></li>
-              <li><strong><a href="#"></a></strong></li>
+              <li><strong><a href="#hreflang">- Balise hreflang -</a></strong></li>
+              <li><strong><a href="#balise_canonique">- Balise canonique -</a></strong></li>
+              <li><strong><a href="#">- ARIA signifie Accessible Rich Internet Application Markup -</a></strong></li>
+              <li><strong><a href="https://www.codeur.com/blog/balises-html-seo/" target="_blank"></a>Les 4 balises HTML importantes pour le SEO</strong></li>
+              <div class="ressources">Balise Meta Descritpion</div>
+              <li><strong><a href="https://www.webrankinfo.com/dossiers/conseils/balise-meta-description">www.webrankinfo.com</a></strong></li>
+              <li><strong><a href="https://smartkeyword.io/seo-on-page-balise-meta-description/#pourquoi_balise_meta_description_importante">smartkeyword</a></strong></li>
               <li><strong><a href="#"></a></strong></li>
           </ul>
         </div>
@@ -3347,7 +3391,7 @@
         Si vous aviez déjà redirigé une ancienne page http://monsite.com/page-a vers http://monsite.com/page-b,<br>
         il est important de corriger pour rajouter le https dans cette redirection et ainsi éviter que le visiteur soit redirigé 2 fois (une fois vers la nouvelle page en http puis à cause du changement en https).</div><br>
 
-        <h3>Optimisez vos balises canoniques</h3>
+        <h3 id="balise_canonique">Optimisez vos balises canoniques</h3>
         Comme vous le savez, la balise <strong><u>meta robots</u></strong> et les balises <strong><u>meta title et description</u></strong> sont excessivement importantes pour le SEO de votre site web.<br><br>
         <div class="remarque">
             Pour rappel, n’oubliez pas de paramétrer votre balise meta robots sur chaque page qui doit être indexée, de la façon suivante :<br>
@@ -3840,6 +3884,115 @@
 
         <h2 id="cdn">2.4 - Appuyez-vous sur un Content Delivery Network -</h2>
 
+        <h3>Découvrez les CDN (Content Delivery Network)</h3>
+        Un RDC, <em>réseau de diffusion de contenu</em> (ou CDN qui est le terme le plus utilisé) est un réseau mondial de serveurs proxy (des serveurs qui servent d'intermédiaire),<br>
+        qui permet d'accélérer le traitement des données pour les utilisateurs finaux.<br>
+        Les CDN sont utilisés pour améliorer l'expérience globale de l'utilisateur et fournir un réseau plus efficace.<br><br>
+        <div class="question"><img src="media/question-circle-regular.svg">Ok, mais comment les CDN améliorent l’expérience utilisateur ?</div><br>
+        En quelques mots, pour minimiser la distance entre les visiteurs et le serveur de votre site web,<br>
+        un CDN stocke une version mise en cache de son contenu dans <strong>plusieurs endroits géographiques</strong> (a.k.a., points de présence, ou PoPs).<br>
+        <figure>
+            <img src="media/15556751018742_Capture d’écran 2019-04-19 à 09.55.25.png" alt="PoP">
+            <figcaption>Chaque PoP contient un certain nombre de serveurs de mise en cache<br>
+            responsables de la livraison du contenu aux visiteurs qui se trouvent à proximité.</figcaption>
+        </figure>
+        Un CDN permet à vos visiteurs d’obtenir le contenu de vos pages web encore plus rapidement.<br>
+        <div class="remarque2">Concrètement, lorsqu'un CDN est installé sur un site hébergé en France,<br>
+        et qu'une personne en Suisse le consulte,<br>
+        cela se fait par l'intermédiaire d'un PoP local en Suisse.</div><br>
+
+        <h3>Décidez si l'installation d'un CDN est une priorité pour votre site</h3>
+        <ul>Les avantages d’un CDN sont nombreux, et notamment pour le SEO :
+            <li>
+                amélioration de la <strong>vitesse de chargement des pages</strong> et donc amélioration de la crawlabilité de votre site ;
+            </li>
+            <li>
+                traitement des <strong>charges de trafic élevées</strong> pour éviter à votre serveur de crasher ;
+            </li>
+            <li>
+                blocage des <strong>spammeurs</strong> ;
+            </li>
+            <li>
+                amélioration de votre <strong>couverture serveur</strong>, et donc de la vitesse de votre site.
+            </li>
+        </ul>
+        <div class="question"><img src="media/question-circle-regular.svg">Est-ce que cela vaut toujours le coup d’installer un CDN ?</div><br>
+        Installer un CDN peut s’avérer néfaste pour votre SEO, s’il n’est pas configuré correctement.<br>
+        De plus, suivant votre fournisseur, cela peut représenter un coût en plus pour votre entreprise.
+        <ul>Vous pouvez vous poser ces questions :
+            <li>
+                Avez-vous un trafic mondial, et donc besoin d’une couverture plus importante ?
+            </li>
+            <li>
+                Avez-vous un trafic déjà important sur votre site  (supérieur à 50 000 visiteurs par mois) ?
+            </li>
+            <li>
+                Avez-vous souvent des pics de trafics (campagnes média, par exemple) ?
+            </li>
+            <li>
+                Votre site est-il la cible de spams ou d’attaques fréquentes ?
+            </li>
+            <li>
+                Avez-vous beaucoup de ressources statiques : images / vidéos / PDF ?
+            </li>
+        </ul>
+        Si vous n’avez pas répondu oui à une de ces questions, il y a certainement d’autres optimisations à faire avant d’installer un CDN !
+
+        <h3>Choisissez le bon fournisseur de CDN</h3>
+        Il y a deux principaux cas de figures possibles pour l'installation d'un CDN sur votre site :
+        <ul>
+            <li>
+                soit votre hébergeur propose un CDN ou a déjà un partenariat avec un fournisseur.<br>
+                Dans ce cas, il n’y a généralement qu’une case à cocher chez votre hébergeur ;
+            </li>
+            <li>
+                soit vous choisissez vous-même votre fournisseur ;<br>
+                dans ce cas il faudra faire des modifications au niveau de vos entrées DNS. 
+            </li>
+        </ul>
+        <div class="remarque">Avant de commencer, calculez la vitesse de chargement des pages de votre site grâce à un outil comme Pingdom ou Gtmetrix,<br>
+        pour pouvoir effectuer la comparaison une fois le CDN installé !</div><br><br>
+
+        <u><strong>Exemple d’installation d'un CDN </strong></u>
+        Nous allons prendre pour exemple l’installation du CDN de Cloudflare pour une démonstration pas à pas :
+        <ul>
+            <li>
+                première chose : ajoutez l’URL de votre site ;<br>
+                <figure>
+                    <img src="media/15509210546333_pasted image 0 (5).png" alt="cloudfare">
+                    <figcaption>Installation du CDN de Cloudfare sur votre site - Étape 1.</figcaption>
+                </figure>
+            </li>
+            <li>
+                Choisissez votre plan ;<br>
+                <figure>
+                    <img src="media/15509210862929_pasted image 0 (6).png" alt="cloudfare">
+                    <figcaption>Installation du CDN de Cloudfare sur votre site - Étape 2</figcaption>
+                </figure>
+
+            </li>
+            <li>
+                Cloudflare va ensuite récupérer vos DNS et vous indiquer ceux à changer dans votre hébergeur.<br>
+                Voici une <a href="https://support.cloudflare.com/hc/en-us/articles/205195708-Step-3-Change-your-domain-name-servers-to-Cloudflare#registrar-list" target="_blank">documentation</a> qui vous explique comment changer vos DNS chez les principaux hébergeurs ;
+            </li>
+            <li>
+                vous n’avez qu’à les changer, et le tour est joué !
+            </li>
+        </ul>
+
+        <h3>En bref</h3>
+        <ul>
+            <li>
+                Un CDN est un réseau de serveurs.
+            </li>
+            <li>
+                Un CDN a plusieurs avantages, dont la principale est l’amélioration de la vitesse de chargement des pages.
+            </li>
+            <li>
+                Plusieurs fournisseurs existent. Si possible, choisissez un partenaire de votre hébergeur.
+            </li>
+        </ul>
+
 
         <h5><a href="#sommaire">Sommaire</a></h5>
 
@@ -3912,7 +4065,7 @@
         Prenez le temps de vérifier que vous allez bien utiliser toutes les fonctionnalités du plugin et non pas une seule fonctionnalité mineure,<br>
         et surtout que vous ne pouvez pas le coder vous-même rapidement !
 
-        <h3>Optimisez vos images</h3>
+        <h3 id="images_wordpress">Optimisez vos images</h3>
         Comme expliqué dans le chapitre 2, un des facteurs les plus importants dans la lourdeur d’une page, ce sont les images.<br>
         Chaque CMS possède des plugins, souvent gratuits, qui permettent d’optimiser directement les images que vous déposez sur votre site.<br><br>
         <div class="important">Attention, vous devez quand même optimiser la taille des images vous-même !</div><br><br>
@@ -3930,7 +4083,7 @@
         </ul>
         Pour les autres CMS, il vous suffira de taper “image optimization plugin + nom du CMS” pour en trouver !
 
-        <h3>Installez un plugin de cache</h3>
+        <h3 id="cache_wordpress">Installez un plugin de cache</h3>
         Ces plugins vous permettent généralement de faire plus de choses que de mettre simplement en place un cache, comme la minification de vos ressources et leur compression.<br>
         <div class="important">Attention cependant, veillez à bien paramétrer ces plugins pour qu’ils ne cassent pas votre thème ou votre theme builder.<br>
         Par exemple, vous ne pourrez certainement pas déférer en fin de chargement de page tous les fichiers JS !</div><br><br>
@@ -3966,9 +4119,712 @@
             </li>
         </ul>
 
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="google_javascript">3.1 - Découvrez comment Google interprète le JavaScript -</h2> 
+        Le référencement JavaScript est un sujet d'actualité, car de plus en plus de sites web utilisent des frameworks et des librairies JavaScript modernes, comme Angular, React ou Vue.js.<br>
+        <div class="remarque">Ce chapitre ne traite pas de l’intégration du JS dans une page web classique pour améliorer l’expérience utilisateur.<br>
+        Par exemple, Google comprend totalement l’utilisation du JS pour animer <strong>(et non pas générer)</strong> un menu.</div>
+
+        <h3>Familiarisez-vous avec les difficultés que Googlebot rencontre avec le JavaScript</h3>
+        Même si <a href="https://developers.google.com/search/blog/2014/05/understanding-web-pages-better" target="_blank">Google indique depuis 2014</a> que le moteur de recherche est mieux capable de comprendre les pages web,<br>
+        l’expérience nous montre que sa compréhension du JavaScript n'est pas encore parfaite.<br>
+        Il est donc préférable de respecter toutes les bonnes pratiques pour optimiser son site au mieux !<br><br>
+        Il y a trois facteurs importants concernant le référencement du JavaScript.
+        <ul>
+            <li>
+                <u><strong>Le crawling</strong></u>: Googlebot doit être capable d’explorer votre site en navigant grâce aux liens ;
+            </li>
+            <li>
+                <u><strong>Le rendering, ou rendu</strong></u>: Googlebot doit être capable de lire le contenu de votre page web ;
+            </li>
+            <li>
+                <u><strong>Le budget de crawl</strong></u>: Rappelez-vous, Googlebot utilise beaucoup de ressources pour parcourir et indexer les sites.<br>
+                S’il a du mal à parcourir votre site et que cela lui demande des ressources trop importantes, il s’arrêtera avant d’avoir terminé.
+            </li>
+        </ul>
+        La réponse est donc “oui, mais…”.<br>
+        Googlebot est de plus en plus capable de comprendre le JavaScript, mais il y a des contraintes en plus à respecter !<br><br>
+        <div class="question"><img src="media/question-circle-regular.svg">Pourquoi est-ce difficile pour Google de crawler le JavaScript ?</div><br>
+        Il y a deux raisons à cela :
+        <ul>
+            <li>
+                tout d’abord, il est très simple en JavaScript, comme dans tout langage, de faire une erreur.<br>
+                Le problème est qu’en général, une erreur en JavaScript bloque l'exécution du reste du code.<br>
+                Vous comprenez que si toute votre page s’affiche grâce à du JavaScript, cela peut poser des problèmes importants ;
+            </li>
+            <li>
+                GoogleBot se comporte comme le navigateur Chromium pour effectuer le rendu de votre site.<br>
+                Il se sert maintenant de la dernière version de Chromium et est mis à jour régulièrement.<br>
+                Cependant, le JavaScript évolue très rapidement et est souvent en avance sur le moteur de recherche.<br>
+                Certaines fonctionnalités pourraient donc ne pas être reconnues ;
+            </li>
+            <li>
+                laisser Googlebot faire le rendu de votre JavaScript, en plus du problème ci-dessus, le force à dépenser beaucoup plus de ressources.<br>
+                En effet, au lieu d’explorer et de télécharger les pages simultanément comme il le ferait pour le HTML/CSS, Googlebot va devoir :
+                <ol>
+                    <li>
+                        D’abord explorer.
+                    </li>
+                    <li>
+                        Télécharger la page.
+                    </li>
+                    <li>
+                        Effectuer le rendu.
+                    </li>
+                    <li>
+                        Indexer une première fois.
+                    </li>
+                    <li>
+                        Il va ensuite certainement découvrir d’autres liens grâce au rendu, et répéter l’opération
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        Comme vous le savez, il vaut mieux faciliter le travail de Google plutôt que de le complexifier !<br><br>
+        <figure>
+            <img src="media/15550567363566_Capture d’écran 2019-04-11 à 19.30.47.png" alt="crawling_google">
+            <figcaption>Googlebot - Fonctionnement.</figcaption>
+        </figure>
+
+        <h3>Choisissez la bonne technologie pour votre site</h3>
+        Ceci nous amène à nous interroger sur le choix de la technologie, si vous n’avez pas déjà un site en ligne.<br>
+        Voici trois cas de figure principaux :<br>
+        <u><strong>1. Votre site a peu de logique métier et a un but marketing (acquisition de clients) :</strong></u><br>
+        Dans ce cas, c’est simple, optez pour un site classique et non pas un site basé sur un framework JavaScript.<br>
+        C’est le cas des sites vitrines, par exemple, ou qui contiennent certaines actions simples, comme un formulaire de réservation ou de paiement.<br><br>
+        <u><strong>2. Votre site est une web app avec une logique métier.<br>
+        Vous avez aussi besoin d’une vitrine pour acquérir de nouveaux clients :</strong></u><br>
+        C’est généralement le cas de la plupart des SaaS, tels que OnCrawl, par exemple.<br>
+        Si vous avez déjà créé votre web-app, mais que vous n’avez pas encore de site vitrine à but marketing, mieux vaut coder celui-ci en HTML/CSS et faire un lien vers votre web app !<br>
+        En effet, vous aurez le meilleur des 2 mondes :<br>
+        une web app en JavaScript, plus agréable pour vos utilisateurs,<br>
+        et un site vitrine “classique” pour acquérir de nouveaux clients, plus simple à maintenir.<br><br>
+        <u><strong>3. Vous souhaitez créer ou vous possédez déjà une SPA (Single Page Application) :</strong></u><br>
+        <div class="remarque">Pour rappel, une SPA signifie que le navigateur n’a pas besoin de rafraîchir toute la page à chaque requête,<br>
+        c’est le contenu de la page qui change dynamiquement suivant les actions du visiteur.<br>
+        L’avantage de ces applications web est leur fluidité et leur expérience utilisateur.<br>
+        Le désavantage : elles sont plus difficiles à référencer.</div><br><br>
+        Si votre site est déjà codé en JavaScript pour une quelconque raison,<br>
+        que ce soit un besoin comme pour les recherches de covoiturage sur le site de BlaBlaCar par exemple,<br>
+        ou que ce soit parce que vous voulez utiliser la même technologie pour votre site vitrine et votre application, vous devrez aider Googlebot à bien l’indexer.<br>
+        C’est le sujet des chapitres suivants ! <br><br>
+
+        <h3>Respectez les bonnes pratiques SEO si votre site est déjà créé en Angular, React ou Vue</h3>
+        Il est possible de confondre des problèmes causés par le JavaScript ou par une SPA, avec de simples problèmes SEO classiques.<br>
+        En effet, certaines bonnes pratiques sont communes, quelle que soit la technologie de développement web utilisée.<br>
+        N'accusez pas trop vite le JavaScript !<br>
+        Les voici pour rappel :
+        <ul>
+            <li>
+                <strong>URL indexables</strong> - les pages ont toujours besoin d'URL uniques, distinctes et indexables.<br>
+                Il doit y avoir une page réelle, avec une réponse du serveur de 200 OK pour chaque page individuelle que vous voulez indexer.<br>
+                Une SPA doit fournir des URL côté serveur pour chaque catégorie, article ou produit ;
+            </li>
+            <li>
+                n’utilisez <strong>pas de # dans les URL pour indiquer des pages distinctes</strong> ;
+            </li>
+            <li>
+                dans tous les cas, les pages ont besoin de <strong>titres, méta descriptions, méta robots, URL propres</strong> (c’est-à-dire contenant le mot clé),<strong> contenu textuel, images, attributs alt,</strong> etc.
+            </li>
+            <li>Le contenu d’un site en JavaScript doit être audité, comme celui d’un site en HTML/CSS ;
+                <ul>
+                    <li>
+                        <strong>liens, attributs href</strong> pour les liens et <strong>src</strong> pour les images - Googlebot suit toujours les liens pour explorer votre site, ne les oubliez pas ;
+                    </li>
+                    <li>
+                        <strong>contenu dupliqué</strong> - le rendu JavaScript peut créer plusieurs versions de page (pré-DOM et post-DOM).<br>
+                        Veillez donc à minimiser les différences entre celles-ci, et n’oubliez pas la <a href="#balise_canonique">balise canonique</a> !
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="important">Attention, tout contenu généré par une action d’un utilisateur du site, par exemple un onclick, ne sera généralement pas indexé.</div>
+
+        <h3>En bref</h3>
+        <ul>
+            <li>
+                Googlebot peut crawler le JavaScript, mais ce n’est pas idéal.
+            </li>
+            <li>
+                Si vous n’avez pas encore de site, et que celui-ci aura un but d’acquisition client, préférez un front en HTML/CSS.
+            </li>
+        </ul>
+
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="client-side_vs_server-side rendering">3.2 - Décidez entre client-side et server-side rendering -</h2> 
+        Maintenant que vous en savez plus sur la façon dont Googlebot interprète le JavaScript, intéressons-nous aux méthodes principales de rendu, ou rendering.<br>
+        Pour rappel, le rendering, c’est l’action d’interpréter le code de vos pages, dans le but d’afficher votre site web.<br>
+        Si vous suivez ce cours, et surtout ce chapitre, c’est que vous avez déjà créé ou que vous souhaitez créer un site web grâce à un framework JavaScript,<br>
+        et que ce site aura également un but marketing et SEO.<br>
+        Si ce n’est pas le cas, pour rappel, il vaut mieux que le front de votre site vitrine soit codé avec un rendu classique en HTML/CSS !<br><br>
+        <div class="important">Vous trouverez sur Internet beaucoup de tests / études et avis contradictoires sur l’indexation des sites codés en JavaScript.<br>
+        Ces sites peuvent très bien être référencés et optimisés en SEO, cela vous rendra simplement la tâche plus difficile.</div><br><br>
+        À la date de publication de ce cours, voici les différentes solutions qui s’offrent à vous.
+
+        <h3>Le client-side rendering</h3>
+        Le client-side rendering consiste à laisser le navigateur interpréter le JavaScript pour générer le contenu HTML de votre site.<br>
+        Ainsi, lorsque le navigateur fait une requête au serveur, au lieu d’obtenir tout le contenu du document HTML lui-même,<br>
+        vous obtenez un document HTML simple, avec un fichier JavaScript qui permettra au navigateur de générer le reste du site.<br><br>
+        Si l'optimisation SEO est votre objectif, mieux vaut éviter cette méthode de rendering.<br>
+        Rappelez-vous du chapitre précédent ; il y a 3 raisons pour lesquelles il vaut mieux ne pas préférer cette approche :
+        <ul>
+            <li>
+                les erreurs plus ennuyeuses en JavaScript ;
+            </li>
+            <li>
+                le retard éventuel de Googlebot sur des nouvelles fonctionnalités JavaScript.<br>
+                GoogleBot limite certaines API et fonctionnalités ;
+            </li>
+            <li>
+                les ressources plus importantes à dépenser pour effectuer ce rendu.
+            </li>
+        </ul>
+        De plus, Googlebot est l’un des seuls bots, si ce n’est le seul, à pouvoir crawler et indexer du contenu généré en JS.<br>
+        Les autres bots comme Bingbot (le robot du moteur de recherche Bing) en sont incapables, ou au mieux, beaucoup moins efficaces dans l’indexation du contenu JS.<br><br>
+        Si vous souhaitez référencer votre site en Chine, en Russie ou dans d’autres pays utilisant d’autres moteurs de recherche que Google, il serait préférable d’éviter le client-side rendering.<br><br>
+        <div class="question"><img src="media/question-circle-regular.svg">Si j’ai déjà créé mon site, qui est pensé en client-side rendering, et que je n’ai pas le temps de le refaire, est-il quand même possible de l’optimiser ?</div><br>
+        Oui, c’est possible.<br>
+        Cependant, comme dit dans le chapitre précédent, vous devrez, d’une part, respecter les bonnes pratiques SEO,<br>
+        puis faire en sorte que votre code s’adapte aux navigateurs et robots plus anciens.<br><br>
+        Le mieux dans ce cas, est d’installer un prérendu, ou <strong>pre-rendering</strong> !<br<<br>
+        <div class="remarque">Pour information : il ne s’agit pas ici de se positionner de manière intransigeante contre le client-side rendering qui peut, bien sûr, être justifié dans beaucoup de cas, mais qui n’est pas idéal si votre site a un fort but SEO.</div>
+
+        <h3 id="pre-rendering">Installation d'un pre-rendering</h3>
+        Le pre-rendering est un processus qui permet de précharger tous les éléments d’une page, afin qu'ils soient crawlés et indexés.<br>
+        Les solutions de pre-rendering vont intercepter une demande d’affichage pour voir si le user-agent consultant votre site est un robot d’indexation tel que Googlebot.<br>
+        Elles vont ensuite envoyer une version cache de votre site pour qu’elle soit générée avec tout le contenu, les images, etc.<br>
+        Si le user-agent n’est pas un robot, alors tout est chargé normalement.<br><br>
+        Le pre-rendering n'est utilisé que pour optimiser l'expérience des bots.<br><br>
+        Voici un exemple de solutions de pre-rendering :
+        <ul>
+            <li>
+                <a href="https://prerender.io/" target="_blank">Prerender.io</a> : si vous utilisez Prerender.io, pensez bien à utiliser la dernière version !<br>
+                Plus d’informations <a href="https://docs.prerender.io/article/9-google-support" target="_blank">ici</a> ;
+            </li>
+            <li>
+                <a href="https://github.com/chrisvfritz/prerender-spa-plugin" target="_blank">Prerender spa plugin</a> ;
+            </li>
+            <li>
+                <a href="https://github.com/stereobooster/react-snap" target="_blank">React-snap</a>.
+            </li>
+        </ul>
+        <div class="important">Cependant, faites attention au cloaking. Les utilisateurs réels et les bots reçoivent un contenu différent.<br>
+        Cette méthode pourrait être proche du cloaking (technique utilisée par les black hats pour optimiser leur positionnement).<br>
+        Veillez donc à ce qu’il n’y ait pas de différence de contenu entre vos pages prérendues et vos pages normales.</div><br><br>
+
+        <h3>Le server-side rendering</h3>
+        Le rendu côté serveur, ou <strong>server side rendering</strong> (SRR) correspond au fonctionnement des sites web classiques :<br>
+        le navigateur envoie une requête au serveur, celui-ci traite l’information et renvoie une requête http contenant le HTML complet au navigateur, qui peut ensuite facilement effectuer le rendu.<br>
+        Il est tout à fait possible de penser et de concevoir votre application JavaScript en SRR, qu’elle soit codée en React, Angular ou Vue.<br><br>
+        Deux avantages principaux en découlent :
+        <ul>
+            <li>
+                un gain de performances perçues : en effet, le contenu est déjà prêt à être affiché, la page sera donc affichée plus rapidement ;
+            </li>
+            <li>
+                une meilleure indexation SEO.  
+            </li>
+        </ul>
+        Mais il y a aussi des désavantages :
+        <ul>
+            <li>
+                la page sera affichée plus tôt, mais l’utilisateur ne pourra pas interagir avec, tant que les ressources JavaScript ne seront pas correctement chargées ;
+            </li>
+            <li>
+                le développement sera plus long et plus complexe en SSR.
+            </li>
+        </ul>
+
+        <div class="remarque">JavaScript universel ou “isomorphic” : vous pourrez trouver cette formulation sur Internet.<br>
+        Cela signifie que le JavaScript que vous codez marchera côté client ET côté serveur.<br>
+        En clair, si vous codez une SPA et que vous souhaitez qu’elle soit rendue côté serveur, vous coderez en JavaScript universel.</div><br><br>
+        Si vous allez développer votre site en Vue.js et que vous souhaitez mettre en place un SSR, voici la documentation : <a href="https://vuejs.org/v2/guide/ssr.html" target="_blank">Le guide</a>.
+
+        <h3>Choisissez la solution qui correspond le mieux à votre site</h3>
+        Récapitulons les deux situations qui se présentent à vous, et les solutions correspondantes :
+        <ul>
+            <li>
+                si votre site web est déjà codé et n’a pas été prévu pour faire un rendu côté serveur, vous devrez vous orienter vers un prérendu ;
+            </li>
+            <li>
+                si vous créez votre site, l’idéal serait de le créer en JavaScript universel ou en SSR.<br>
+                Pour Vue.js, vous pourriez par exemple utiliser <a href="https://fr.nuxtjs.org/" target="_blank">Nuxt</a> et vous référer au guide cité précédemment.<br>
+                Ceci dit, ces techniques de développement sont complexes et nécessitent une expertise plus poussée.
+            </li>
+        </ul>
+        Pensez évidemment à votre ROI avant tout : il s’agit de trouver le meilleur rapport entre le temps, ainsi que les ressources nécessaires au développement de votre site,<br>
+        et son impact sur l’expérience de vos utilisateurs et, in fine, sur vos revenus.<br><br>
+
+        <div class="important">N’oubliez pas, toutes ces techniques ne serviront à rien si les bonnes pratiques présentées dans le chapitre 1 de cette partie ne sont pas respectées !</div>
+
+        <h3>En bref</h3>
+        <ul>
+            <li>
+                Il existe deux types de rendu : celui côté client (CSR) et celui côté serveur (SSR).
+            </li>
+            <li>
+                Pour le SEO, mieux vaut privilégier, si vous le pouvez le SSR.
+            </li>
+            <li>
+                Vous pouvez aussi opter dans la mise en place d’un prérendu, ou pre-rendering.
+            </li>
+        </ul>
+
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="test_rendering">3.3 - Testez votre rendering -</h2> 
+        <h3>Utilisez le rendu de la Google Search Console</h3>
+        Malheureusement, à la date de publication de ce cours, cette fonction est toujours dans l’ancienne version de la Search Console.<br>
+        Pour y accéder, il suffit d’aller dans l’onglet Exploration, puis de cliquer sur “Explorer comme Google” ou “Fetch as Google”.<br>
+        Cela vous permet d’afficher la page comme Googlebot la voit, et de vérifier qu’il est bien capable d’effectuer le rendu de votre page.<br>
+        Je vous conseille de tester les pages principales de votre site pour vérifier que le rendu est bien effectué partout.<br>
+        Une autre fonctionnalité, cette fois-ci dans la Search Console, est la possibilité de voir si votre URL est bien indexée par Google ou si elle présente des problèmes.<br>
+        Pour cela, il vous suffit de taper l’URL dans la barre de recherche tout en haut.<br>
+        Vous obtenez ensuite cet écran qui vous donnera des informations sur l’état de votre page dans l’index de Google.<br>
+        Si vous souhaitez voir si elle est indexable et correctement explorable, vous n’avez qu’à cliquer sur le bouton “Tester l’URL en ligne”.<br>
+        <figure>
+            <img src="media/15509225010264_pasted image 0 (8).png" alt="url_google">
+        </figure><br><br>
+        <div class="remarque2">
+            Voici un exemple tiré d’un article sur la <a href="https://naturalathleteclub.com/spiruline/" target="_blank">spiruline</a> du site <a href="https://naturalathleteclub.com" target="_blank">Natural Athlete Club</a>.
+            <figure>
+                <img src="media/1555004188284_Capture d’écran 2019-04-11 à 19.36.07.png" alt="inspectionURL_google_search_console">
+                <figcaption>Google Search Console - Résultat de l'outil d'inspection d'URL.</figcaption>
+            </figure>
+            Nous avons utilisé la fonction de test d’une URL de la nouvelle Search Console, suivie de la fonction “Tester l’URL en ligne”.<br>
+            Nous voyons bien ici que Googlebot arrive correctement à faire le rendu.<br>
+            Ceci est normal, car ce site n’est pas un site en JavaScript mais un site classique.<br>
+            Vous devrez effectuer ce test pour vos pages, et vérifier que vous obtenez le même résultat.
+        </div>
+
+        <h3>Explorez votre site grâce à Chrome version 41</h3>
+        <div class="important">Contrairement à ce qui est expliqué dans la vidéo (en cours de mise à jour),<br>
+        GoogleBot utilise enfin la dernière version de Chromium et sera mis à jour régulièrement.<br>
+        Ce test n'est donc plus utile ! </div>
+
+        <h3 id="optimisation_mobile">Testez le rendering de votre site en version mobile-friendly</h3>
+        <figure>
+            <img src="media/15509225717296_pasted image 0 (9).png" alt="adaptation_mobile">
+        </figure>
+        Enfin, comme nous l’avons vu dans le premier chapitre de cette partie,<br>
+        il est indispensable que votre site soit optimisé pour les mobiles.<br><br>
+        Vous pouvez le tester grâce à l’outil <a href="https://search.google.com/test/mobile-friendly" target="_blank">“Test d’optimisation mobile”</a> de Google.<br><br>
+        L’avantage est double. Il vous permet de vérifier que votre site sera adapté pour vos visiteurs.<br>
+        Il vous permettra également de voir si le rendu du site est fait correctement, et donc si Googlebot mobile sera capable de l’explorer et de l’indexer !
+
+        <h3>En bref</h3>
+
+        <ul>
+            <li>
+                Utilisez la fonction “explorer comme Google” de la Search Console, et vérifiez que Google reçoit bien votre page.
+            </li>
+            <li>
+                Testez votre site grâce à l’outil mobile-friendly.
+            </li>
+        </ul>
+
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="architecture_technique">4.1 - Mettez en place la bonne architecture technique -</h2> 
+        Dans cette partie, nous parlerons de l’optimisation d’un site multilingue dans un but SEO.<br>
+        Dans un contexte d’entreprise, il y aura certainement plusieurs variables à prendre en compte, telles que le budget, les ressources en développement, la facilité de mise à jour du site, etc.<br>
+        Dans ce chapitre particulièrement, nous allons voir différentes solutions pour l’architecture de votre site, avec leurs avantages et leurs inconvénients.<br>
+        Il vous faudra adapter vos choix aux particularités de votre projet ou de votre entreprise.<br>
+        Le plus important, une fois que vous avez déterminé les langues de votre site mais avant de penser à sa traduction, est de savoir l’architecture que vous allez mettre en place.<br>
+        En effet, il est nécessaire que Google comprenne bien qu’il y a plusieurs langues sur votre site et que ces langues sont bien scindées entre elles !<br>
+        Rappelez-vous, plus vous facilitez le travail de Google, plus il vous le rendra.<br><br>
+        Les principaux éléments à prendre en compte sont les suivants :
+        <ul>
+            <li>
+                la force du signal géographique que vous envoyez à Google, c’est-à-dire le pays et la langue cibles de votre site ;
+            </li>
+            <li>
+                la difficulté technique de mise en place et de maintenance ;
+            </li>
+            <li>
+                les ressources nécessaires (en budget et ressources humaines) de maintenance et de SEO.
+            </li>
+        </ul>
+        Voici les trois architectures de site multilingue que nous allons traiter :
+        <ul>
+            <li>
+                un nom de domaine par langue ;
+            </li>
+            <li>
+                un sous-domaine par langue ;
+            </li>
+            <li>
+                un répertoire (ou sous-dossier) par langue.
+            </li>
+        </ul>
+
+        <h3>Nom de domaine par langue</h3>
+
+        <div class="remarque"><strong>Exemple :</strong> C’est le cas du géant Amazon : si vous êtes en France, vous accéderez à amazon.fr, en Allemagne à amazon.de, etc.</div><br><br>
+        Créer un site par langue, et donc un nom de domaine par langue, a plusieurs avantages :
+        <ul>
+            <li>
+                cela permet à Google de <strong>cibler géographiquement</strong> votre site parfaitement : les noms de domaines envoient un fort signal géographique à Google.<br>
+                Par exemple, un .fr aura la plupart du temps du contenu en français, et s’adressera à un public français ;
+            </li>
+            <li>
+                cela vous permet d’utiliser le ciblage géographique dans la <strong>Search Console</strong> ;
+            </li>
+            <li>
+                le contenu est <strong>correctement séparé au niveau serveur</strong> ;
+            </li>
+            <li>
+                cela vous permet d’adapter facilement votre site aux <strong>exigences légales</strong> des pays #RGPD ;
+            </li>
+            <li>
+                d’autre part, si vous souhaitez être indexé sur les moteurs de recherche chinois, mieux vaut bénéficier d’un .cn.
+            </li>
+        </ul><br><br>
+        En revanche, cette approche a plusieurs inconvénients majeurs :
+        <ul>
+            <li>
+                d’une part, maintenir plusieurs sites est très coûteux en temps, en ressources et en budget.<br>
+                Par exemple, si vous changez quelque chose dans un site, il faudra refaire le même travail pour les sites dans les autres langues ;
+            </li>
+            <li>
+                d’autre part, certains noms de domaine ont des exigences légales non négligeables pour pouvoir être déposés.<br>
+                C’est par exemple le cas de notre .fr, qui nécessite que votre entreprise réside dans un des pays de l’Union européenne, ou en Suisse.
+            </li>
+        </ul>
+
+        <div class="important">Enfin, avoir un nom de domaine dans la langue sur laquelle vous souhaitez être placé ne vous garantit absolument pas d’avoir un bon classement !<br>
+        En effet, même si Google peut reconnaître que vos domaines sont liés, ce sont bien des domaines différents !<br>
+        Ils ne bénéficieront donc pas du SEO déjà effectué sur le domaine principal.<br>
+        Il vous faudra donc tout recommencer et faire des campagnes de backlinks pour chacun des domaines !</div>
+
+        <h3>Sous-domaine par langue</h3>
+        <div class="remarque"><strong>Exemple</strong> : Wikipedia - France : fr.wikipedia.org, pays anglophones : en.wikipedia.org etc.</div><br><br>
+        Voici les avantages si vous choisissez de mettre en place un sous-domaine par langue :
+        <ul>
+            <li>
+                plus simple à mettre en place qu’un nom de domaine par site ;
+            </li>
+            <li>
+                cela vous permet d’utiliser le ciblage géographique dans la Search Console ;
+            </li>
+            <li>
+                cela vous permet différents emplacements de serveur ;
+            </li>
+            <li>
+                la séparation des langues est également simple au niveau du serveur.
+            </li>
+        </ul>
+        Cependant, il y a là aussi un désavantage important :<br>
+        tout comme dans le cas des domaines différents, vos sous-domaines ne bénéficieront pas de la totalité de la force de lien de votre domaine principal, étant considérés comme des domaines différents.<br>
+        Le signal donné à Google sera beaucoup moins fort qu’avec un nom de domaine séparé.
+
+        <h3>Répertoire par langue</h3>
+        <div class="remarque"><strong>Exemple</strong> : IBM - France : https://www.ibm.com/fr-fr/, Royaume-Uni : https://www.ibm.com/uk-en/ etc.</div><br><br>
+        <strong>C’est généralement la meilleure option.</strong><br>
+        Il s'agit d'avoir un sous-dossier par langue.<br>
+        Voici ses avantages :
+        <ul>
+            <li>
+                très facile à mettre en place ;
+            </li>
+            <li>
+                peut également utiliser le ciblage géographique des outils pour les webmasters ;
+            </li>
+            <li>
+                maintenance faible.
+            </li>
+        </ul>
+        Il y a tout de même quelques inconvénients :
+        <ul>
+            <li>
+                un signal peu important de géolocalisation pour Google, ce qui pourra rendre le <strong>SEO local plus difficile</strong> ;
+            </li>
+            <li>
+                la séparation des différentes langues sur le site sera plus difficile et moins claire.
+            </li>
+        </ul>
+
+        <h3>Choisissez l'architecture qui correspond le mieux à votre site</h3>
+        De manière générale, en terme de SEO, préférez la séparation par répertoire.<br>
+        Vous n’aurez pas à tout recommencer pour chaque langue, et la mise en place sera très simple.<br>
+        C’est la solution qui permettra à vos pages traduites d’être bien classées le plus rapidement.<br><br>
+        En revanche, si vous avez besoin d’un très fort SEO local par pays, ou si le contenu de votre site est amené à être différent suivant la langue de vos visiteurs (exemple : produits différents, navigation différente en fonction de la culture du pays), il vaudra sûrement mieux avoir des sites et des noms de domaines différents.<br><br>
+        <div class="question"><img src="media/question-circle-regular.svg">Et pourquoi ne pas mettre la langue comme paramètre d’URL, ou sans même changer l’URL ?</div><br>
+        Il est effectivement possible de gérer les différentes traductions de votre site grâce à un paramètre dans l’URL ou simplement avec un cookie,<br>
+        mais n'utilisez jamais cette solution si vous tenez à votre SEO.<br>
+        Ces solutions ne sont pas traitées dans ce chapitre car, d’un point de vue SEO, ce ne sont pas de bonnes pratiques !<br>
+        <div class="question"><img src="media/question-circle-regular.svg">Comment faire dans le cas où j’utilise un CMS ?</div><br>
+        Il existe des plugins de traduction très performants pour chaque CMS.<br>
+        La plupart du temps, pour un projet de cette envergure, mieux vaut s’orienter vers un plugin payant et connu, bénéficiant d’un support réactif.<br>
+        Comme dans tout choix de plugin, vérifiez bien la qualité de celui-ci avant de l’installer.<br>
+        Vérifiez également bien que le plugin que vous choisissez est cohérent par rapport à l’architecture que vous avez définie !<br><br>
+        <div class="important">Attention, la plupart des plugins proposent par défaut une installation par répertoire,<br>
+        ce qui ne correspond pas forcément au choix que vous aurez fait.</div>
+
+        <h3>En bref</h3>
+        <ul>
+            <li>
+                L’architecture de votre site multilingue est un choix crucial pour votre SEO.
+            </li>
+            <li>
+                Plusieurs segmentations sont possibles : par domaine, sous-domaine ou répertoire.
+            </li>
+            <li>
+                D’un point de vue purement SEO, préférez la mise en place de répertoire par langue.
+            </li>
+        </ul>
+
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="contenu_langue">4.2 - Créez du contenu pour chaque langue -</h2> 
+        Une fois que vous avez choisi votre architecture, il faut maintenant penser à la traduction et à la bonne indexation du nouveau contenu de chaque langue !
+
+        <h3 id="hreflang">Respectez les bonnes pratiques on-page</h3>
+        Elles sont évidemment les mêmes que sur vos pages principales.<br>
+        Il y a cependant un aspect technique à ne surtout pas ignorer pour un site multilingue : la balise hreflang.<br>
+        <strong  style="border: 2px solid black;display:inline-block;padding: 5px;">
+            < link rel="alternate" hreflang="en" href="https://votre-site.fr/en/" />
+        </strong><br/><br/>
+        L'annotation  <strong><u>rel="alternate" hreflang="x"</u></strong>  est utilisée pour aider Google à identifier les URL qui doivent être servies à vos visiteurs en fonction de leur langue et de leur situation géographique.<br>
+        C’est donc une balise indispensable lorsque vous avez plusieurs versions du même contenu qui a été traduit ou adapté.<br>
+        <div class="remarque">Comme contenu de l’attribut <strong><u>hreflang</u></strong>, vous pouvez soit mettre seulement une langue, par exemple <strong><u>hreflang=”en”</u></strong>,<br>
+        soit une langue et une région, par exemple <strong><u>hreflang=”en-uk”</u></strong>, pour envoyer des signaux encore plus précis aux moteurs de recherche.</div><br><br>
+        Selon Google, il y a 3 façons de mettre en place ce balisage :
+        <ul>
+            <li>
+                sous forme de balise HTML dans la section <head></head> de votre page ;
+            </li>
+            <li>
+                dans votre sitemap ;
+            </li>
+            <li>
+                en en-tête HTTP.
+            </li>
+        </ul><br><br>
+        Je vous conseille d’opter pour les balises directement dans vos pages, car cela est plus simple à maintenir.<br><br>
+
+        <div class="remarque">Les plugins de traduction (de qualité) des CMS vous demanderont de lier les pages de traductions entre elles,<br>
+        ce qui leur permettra de créer les balises hreflang pour vous.</div><br><br>
+        N’utilisez qu’une seule des 3 méthodes !<br><br>
+        Il existe une balise “default” qui permet de proposer une URL par défaut pour les utilisateurs ne parlant aucune des langues présentes sur votre site :<br>
+        <strong  style="border: 2px solid black;display:inline-block;padding: 5px;">
+            < link rel="alternate" hreflang="x-default" href="https://votre-site.fr/">  
+        </strong><br/><br/>
+        Voici par exemple les balises alternate de la page Home du site de la SNCF en français :<br>
+        <strong  style="border: 2px solid black;display:inline-block;padding: 5px;">
+            < link rel="alternate" hreflang="de" href="https://www.sncf.com/de/home"><br>
+            <br>
+            < link rel="alternate" hreflang="en" href="https://www.sncf.com/en/home"><br>
+        </strong><br/><br/>
+        Ces balises indiquent les variantes des pages dans les autres langues, anglais et allemand.<br><br>
+        <div class="important">Faites attention à vos balises canoniques :<br>
+        ne mettez pas une balise canonique vers une page en français, sur vos pages en anglais !</div><br><br>
+        <u><strong>Autre signaux de langue</strong></u>
+        Vous pouvez également rajouter la langue de la page dans votre balise html en tant qu’attribut :<br>
+        <strong  style="border: 2px solid black;display:inline-block;padding: 5px;">
+            < html lang="en-us"><br>
+                ...<br>
+                < /html><br>
+        </strong><br/><br/>
+
+        <div class="important">Attention, cet attribut doit être cohérent avec vos balises hreflang :<br>
+        ne mettez pas un lang=”fr-fr” sur une page en anglais, par exemple.</div>
+
+        <h3>Effectuez une recherche de mot clé par langue</h3>
+        Cela peut paraître évident, mais ne traduisez pas mot pour mot le contenu de votre site.<br>
+        Confiez le travail de traduction à quelqu’un qui s’y connaît en SEO,<br>
+        ou faites en sorte de travailler conjointement avec le traducteur,<br>
+        pour vérifier que les traductions correspondent bien à ce que cherchent vos utilisateurs dans les autres langues.<br><br>
+        En effet, une très bonne traduction peut ne pas correspondre du tout aux sujets recherchés par les visiteurs dans la langue en question,<br>
+        et il peut être nécessaire de modifier un peu le contenu de la page que vous souhaitez traduire, pour qu’elle corresponde au mieux à leurs attentes.<br>
+        Pensez notamment au jargon technique qui peut être utilisé bien différemment d’une langue à une autre, ou à des expressions qui ne sont pas utilisées de la même façon !<br><br>
+        Prenons un exemple.<br>
+        <div class="remarque2">
+            En français, le sujet “Voyage dernière minute” est recherché plus de 30 000 fois par mois en France.<br>
+            Une traduction mot à mot en anglais serait “Last minute travel”, qui n’est recherché que 2 000 fois par mois au Royaume-Uni.<br>
+            En revanche, le sujet “Last minute Holidays” est, lui, recherché plus de 200 000 fois (au Royaume-Uni) !<br>
+            Ceci montre bien l’intérêt de faire une recherche de mot clés avant d’effectuer une traduction.<br>
+        </div><br><br>
+        Voici les étapes pour une bonne traduction SEO, à faire pour chaque page :
+        <ul>
+            <li>
+                déterminez le sujet de la page, c’est-à-dire le mot clé principal et les mots clés secondaires ;
+            </li>
+            <li>
+                traduisez-les ;
+            </li>
+            <li>
+                grâce à un outil de recherche de mots clés, tels que le Keyword Planner de Google ou KWFinder,<br>
+                déterminez si ces sujets ont un intérêt SEO et si d’autres variantes existent :
+                <ul>
+                    <li>
+                        si les mots clés existent dans la nouvelle langue, c’est parfait, vous pouvez traduire le texte en se basant sur ces mots clés,
+                    </li>
+                    <li>
+                        sinon, vous devez chercher une alternative cohérente, par exemple en étudiant vos concurrents !
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Distribuez votre nouveau contenu</h3>
+        Une fois votre site traduit, il est essentiel de distribuer le contenu que vous venez de créer.<br>
+        Cela vous permettra d’acquérir vos premiers visiteurs dans la langue traduite !<br>
+        Pour cela, vous avez plusieurs solutions, que ce soit grâce aux réseaux sociaux, à des publicités ou à de l’emailing.<br>
+        Cela permettra d’envoyer comme signal à Google que votre site est actif et qu’il a de l’intérêt.<br>
+        De même, il faut que vous obteniez des liens dans chaque langue présente sur votre site (qui pointeront évidemment vers des pages traduites).
+
+        <h3>En bref</h3>
+        <ul>
+            <li>
+                Optimisez techniquement les pages de votre site pour envoyer les bons signaux de localisation à Google.
+            </li>
+            <li>
+                Ne traduisez pas mot pour mot, faites d’abord une recherche de mots clés.
+            </li>
+            <li>
+                Distribuez votre contenu pour accélérer votre remontée dans les résultats.
+            </li>
+        </ul>
+
+
+        <h5><a href="#sommaire">Sommaire</a></h5>
+
+
+        <h2 id="exercice">Exercice -  Entraînez-vous en allégeant une page web et en paramétrant le cache navigateur -</h2> 
+
+        Pour vous entraîner, réalisez cet exercice étape par étape.<br>
+        Une fois terminé, vous pouvez comparer votre travail avec le corrigé que je vous propose.<br><br>
+        Vous venez de décrocher un poste en tant que SEO manager dans une PME appelée Spatial et vendant des photos de paysages prises par drone.<br>
+        <figure>
+            <img src="media/15550581410806_Capture d’écran 2019-04-12 à 10.35.09.png" alt="spatial">
+        </figure>
+        Après avoir rencontré l’équipe, la directrice Marketing, Jenna, vous explique que le designer et l’intégrateur viennent de terminer la v1 de la page d’accueil du site.<br>
+        Vous arrivez donc juste à temps pour travailler sur la refonte du site Internet.<br>
+        Vous téléchargez la <a href="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/918836/SEO_Performances_Techniques_Activit%C3%A9/optimisation-vitesse-page-spatial-20190412T083429Z-001.zip">page d'accueil</a> et détectez d’un rapide coup d’oeil que la page “index.html” a l’air très lente.<br>
+        Vous notez également que le site web sera hébergé sur un serveur dédié Apache.<br>
+        Vous profitez de cette première tâche pour être proactif et préparer le fichier .htaccess.<br>
+        À vous de jouer pour améliorer la vitesse du site ! Voici donc tout ce que vous devez faire :
+        <ul>
+            <li>
+                optimiser les images qui le nécessitent ;
+            </li>
+            <li>
+                minifier les ressources ;
+            </li>
+            <li>
+                débloquer le téléchargement de la page ;
+            </li>
+            <li>
+                préparer le fichier .htaccess ;
+            </li>
+            <li>
+                activer la compression Gzip ;
+            </li>
+            <li>
+                paramétrer le cache navigateur.
+            </li>
+        </ul>
+
+        <h3>Vérifiez votre travail</h3>
+        Vérifiez que votre fichier est conforme avec tous les éléments suivants :
+        <ul>
+            <li>
+                les images dans les ronds en bas de page ont été mises à la bonne taille et compressées ;
+            </li>
+            <li>
+                les fichiers JS et CSS sont minifiés ;
+            </li>
+            <li>
+                les fichiers JS sont appelés avec une méthode defer ou async ;
+            </li>
+            <li>
+                le fichier .htaccess contient bien l’activation de la compression Gzip ;
+            </li>
+            <li>
+                le fichier .htaccess contient bien le paramétrage des en-têtes Cache-Control et Expires ;
+            </li>
+            <li>
+                le fichier .htaccess est valide<br>
+                (vous pouvez le vérifier avec <a href="http://www.htaccesscheck.com/" target="_blank">http://www.htaccesscheck.com/</a> par exemple).
+            </li>
+        </ul>
+        Vous pouvez vous référer à ce <a href="https://static.oc-static.com/activities/3423/evaluation_resources/ameliorez-la-vitesse-dun-site_exemple-2019-04-12T084906.zip">corrigé</a> si besoin. <br><br>
+
+        <strong>Fichier .htaccess corrigé</strong><br>
+        <strong  style="border: 2px solid black;display:inline-block;padding: 5px;">
+            # GZIP Apache 2.0<br>
+            # BEGIN GZIP<span style="color:red;"> <----- activation de la compression Gzip </span><br>
+            SetOutputFilter DEFLATE<br>
+            AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript<br>
+            <br>
+            BrowserMatch ^Mozilla/4 gzip-only-text/html<br>
+            BrowserMatch ^Mozilla/4\.0[678] no-gzip<br>
+            BrowserMatch \bMSIE !no-gzip !gzip-only-text/html<br>
+            BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html<br>
+            # END GZIP<br>
+            <br>
+            # CACHE NAVIGATEUR<br>
+            # BEGIN Cache-Control Headers<span style="color:red;"> <----- paramétrage des en-têtes Cache-Control</span><br>
+            < IfModule mod_headers.c><br>
+             < FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$"><br>
+             Header set Cache-Control "max-age=2592000, public"<br>
+             < /FilesMatch><br>
+             < FilesMatch "\.(js)$"><br>
+             Header set Cache-Control "max-age=2592000, private"<br>
+             < /FilesMatch><br>
+            < filesMatch "\.(html|htm)$"><br>
+            Header set Cache-Control "max-age=7200, public"<br>
+            < /filesMatch><br>
+            # Enleve le cache pour les ressources dynamiques<br>
+            < FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$"><br>
+            Header unset Cache-Control<br>
+            < /FilesMatch><br>
+            < /IfModule><br>
+            # END Cache-Control Headers<br>
+            <br>
+            # BEGIN Expires Headers<span style="color:red;"> <----- paramétrage des en-têtes Expires ;</span><br>
+            < IfModule mod_expires.c><br>
+            ExpiresActive On<br>
+            ExpiresByType image/jpg "access plus 1 month"<br>
+            ExpiresByType image/jpeg "access plus 1 month"<br>
+            ExpiresByType image/gif "access plus 1 month"<br>
+            ExpiresByType image/png "access plus 1 month"<br>
+            ExpiresByType text/css "access plus 1 month"<br>
+            ExpiresByType application/pdf "access plus 1 month"<br>
+            ExpiresByType text/x-javascript "access plus 1 month"<br>
+            ExpiresByType application/x-shockwave-flash "access plus 1 year"<br>
+            ExpiresByType image/x-icon "access plus 1 year"<br>
+            ExpiresDefault "access plus 2 days"<br>
+            < /IfModule><br>
+            # END Expires Headers<br>
+        </strong><br/><br/>
+
+
+
+
+
+
+
+
+
+
    </body>      
   </html>
-
+  
 <strong><u></u></strong> 
 <h5><a href="#sommaire">Sommaire</a></h5>
 
@@ -3976,7 +4832,6 @@
 
 
 
-   
   <!---insertion d'une figure avec commentaire-->
   <figure>
     <img src="image/" alt="">
